@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.user.dao.EmpDao" >
+    
+    <select id="findallemp" resultType="com.user.entity.Emp">
+        select empno,ename as empName,job,mgr,hiredate,sal,comm,deptno from emp
+    </select>
+
+</mapper>
